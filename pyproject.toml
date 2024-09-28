@@ -1,13 +1,17 @@
 [tool.poetry]
 name = "sprite-cropper"
 version = "0.1.0"
-description = ""
+description = "Sprite Cropping Program"
 authors = ["nack098 <nack098gamer@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+matplotlib = "^3.9.2"
+pyqt6 = "^6.7.1"
 
+[tool.poetry.scripts]
+sprite-cropper = "sprite_cropper.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
