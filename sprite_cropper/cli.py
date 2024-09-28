@@ -45,7 +45,7 @@ def read_image(path: Path):
                 .joinpath("out")
                 .joinpath(name[i])
                 .joinpath("boy")
-                .joinpath(f"{direction[current-1]}{((j%2)+1)}.png"),
+                .joinpath(f"{direction[current-1]}{((j%2)+1)}.bmp"),
                 boys[j],
             )
             mpimg.imsave(
@@ -53,7 +53,7 @@ def read_image(path: Path):
                 .joinpath("out")
                 .joinpath(name[i])
                 .joinpath("girl")
-                .joinpath(f"{direction[current-1]}{((j%2)+1)}.png"),
+                .joinpath(f"{direction[current-1]}{((j%2)+1)}.bmp"),
                 girls[j],
             )
 
